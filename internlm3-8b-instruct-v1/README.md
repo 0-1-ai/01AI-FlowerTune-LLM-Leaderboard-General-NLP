@@ -10,7 +10,7 @@ allowing users to perform the training on a single GPU.
 
 ```text
 .
-├── flowertune-general-nlp/              # Source code for ClientApp, ServerApp, and Strategy
+├── mmfl/                                # Source code for ClientApp, ServerApp, and Strategy
 ├── flowertune-eval-general-nlp/         # Evaluation scripts and instructions
 ├── pyproject.toml                       # Project configuration and dependencies
 └── README.md                            # This file
@@ -100,4 +100,3 @@ See `evaluation/README.md` for the exact environment setup and the single-line c
 ## Checkpoints
 
 - Round 10 PEFT adapter: [Google Drive link](https://drive.google.com/file/d/1qGYwCfn73Du5Tmwa0rtuFXZr35VB5XLd/view?usp=sharing)
-

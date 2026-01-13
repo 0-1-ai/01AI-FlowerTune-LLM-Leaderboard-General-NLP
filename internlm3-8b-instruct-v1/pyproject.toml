@@ -36,11 +36,12 @@ clientapp = "mmfl.client_app:app"
 # Custom config values accessible via `context.run_config`
 [tool.flwr.app.config]
 model.name = "internlm/internlm3-8b-instruct"
+model.trust_remote_code = true
 model.quantization = 4
 model.gradient-checkpointing = true
 model.lora.peft-lora-r = 16
 model.lora.peft-lora-alpha = 32
-model.lora.peft_lora_target_modules = ["q_proj","k_proj","v_proj","o_proj"] 
+model.lora.peft_lora_target_modules = "q_proj,k_proj,v_proj,o_proj"
 model.lora.use-dora = false
 train.save-every-round = 5
 train.learning-rate-max = 5e-5
